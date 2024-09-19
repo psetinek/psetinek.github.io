@@ -1,0 +1,72 @@
+/* Ensure the section fills the entire viewport */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Fill the entire viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  background-color: #0d47a1; /* Optional background color */
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* The content (image, text, and social icons) */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Ensure content is above any background effects */
+}
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.hero-name {
+  font-size: 2.5rem; /* Slightly larger font size */
+  font-weight: bold;
+  margin-bottom: 10px; /* Adds some space below the name */
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin-bottom: 30px; /* Space below the description */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between social icons */
+  margin-bottom: 30px; /* Space below the icons */
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #6a6a6a; /* Hover color */
+}
+
+/* The down arrow at the bottom */
+.down-arrow {
+  position: absolute;
+  bottom: 20px; /* Keep the arrow at the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  color: #ffffff;
+  z-index: 2;
+  transition: color 0.2s;
+}
+
+.down-arrow:hover {
+  color: #6a6a6a; /* Hover color */
+}

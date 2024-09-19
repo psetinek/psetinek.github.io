@@ -1,0 +1,61 @@
+.experience-card {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 10px; /* Padding inside the card */
+    position: relative; /* Ensure positioning for timestamp */
+  }
+  
+  .experience-body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+  }
+  
+  .experience-header {
+    display: flex;
+    align-items: top;
+  }
+  
+  .experience-logo-link {
+    margin-right: 30px; /* Space between logo and title */
+  }
+  
+  .experience-logo {
+    width: 80px; /* Width of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .experience-title {
+    flex: 1;
+  }
+  
+  .experience-subtitle {
+    font-style: italic; /* Make the subtitle italic */
+  }
+  
+  .experience-timestamp {
+    font-size: 0.9rem;
+    color: #ffffff; /* Secondary text color */
+    font-style: italic;
+    margin-left: auto; /* Push timestamp to the far right */
+  }
+  
+  .experience-description {
+    display: flex;
+  }
+  
+  .description-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .description-columns ul {
+    padding-left: 20px; /* Indent list */
+    width: 48%;
+  }
+  
+  .description-columns li {
+    margin-bottom: 5px; /* Space between list items */
+  }
+  

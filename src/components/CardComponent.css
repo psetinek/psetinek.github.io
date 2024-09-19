@@ -1,0 +1,84 @@
+.card-custom {
+  background-color: rgb(33, 33, 33);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  --bs-card-title-spacer-y: 0; /* Set the spacer to zero */
+  --bs-card-spacer-y: 1.5rem;
+  --bs-card-spacer-x: 1.5rem;
+  height: 100%
+}
+  
+.card-custom .btn {
+  margin-top: 10px; /* Add some space between buttons and text */
+  color: #ffffff; /* White text color */
+  background-color: #007bff; /* Bootstrap primary color (blue) */
+  border: none; /* Remove border */
+  transition: background-color 0.2s, color 0.2s; /* Smooth transition for color change */
+}
+
+.card-custom .btn:hover {
+  color: #ffffff; /* Keep text color white on hover */
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.card-custom .btn:not(:last-child) {
+  margin-right: 10px; /* Add space between buttons */
+}
+
+/* New styles for the Skills card */
+.skills-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-column {
+  width: 48%; /* Adjust as needed */
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skills-header h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.skills-header .me-2 {
+  margin-right: 8px;
+}
+
+.skills-column ul {
+  padding-left: 1.5rem;
+}
+
+.skills-column li {
+  margin-bottom: 5px;
+}
+
+/* Languages section styling */
+.languages-section {
+  margin-top: 20px;
+}
+
+.languages-section .skills-header {
+  margin-bottom: 10px;
+}
+
+.languages-section ul {
+  padding-left: 1.5rem;
+}
+
+.languages-section li {
+  margin-bottom: 5px;
+}
+
+.skills-header .fa-icon {
+  font-size: 1rem;
+}

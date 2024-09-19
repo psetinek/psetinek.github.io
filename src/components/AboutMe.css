@@ -1,0 +1,14 @@
+/* Add this to your AboutMe.css or main CSS file */
+.section-divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 0; /* Adjust margin as needed */
+  }
+  
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgb(255, 255, 255); /* Line color */
+  }

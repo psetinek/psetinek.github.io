@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(66, 66, 66);
+}
+
+.section {
+  margin: 0px 50px;
+}
+
+.main-content {
+  padding-bottom: 0.01px;
+}
