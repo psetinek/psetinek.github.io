@@ -2,7 +2,7 @@
   "name": "personal_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://psetinek.github.io/personal_website/",
+  "homepage": "https://psetinek.github.io",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
