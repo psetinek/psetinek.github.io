@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paul Setinek</title>
+  <meta name="description" content="Paul Setinek, PhD student at JKU Linz, working on neural surrogates for physical simulations and the data they learn from.">
+  <link rel="preload" href="fonts/spectral-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <main>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/>
+      </svg>
+    </button>
+
+    <header class="intro">
+      <img class="photo" src="assets/web/photo.webp" alt="Paul Setinek" width="480" height="600">
+      <h1 class="name">Paul Setinek</h1>
+      <div class="intro-text prose">
+        <p>
+          Hi, I am Paul! I am a PhD student working on data-driven neural surrogates for large-scale
+          physical simulations, supervised by Johannes Brandstetter at Johannes Kepler University (JKU)
+          in Linz. Currently, I am visiting Steven Brunton at the University of Washington in Seattle.
+        </p>
+        <p>
+          Before my PhD, I received a bachelor's degree in mechanical engineering from TU Vienna and
+          a master's degree in Applied Computational Science and Engineering from Imperial College London.
+          In my master's thesis, I worked on implicit neural scene representations for underwater
+          maintenance with Aker BP and Imperial College. I also worked on computer vision for automated
+          quality control in manufacturing, using light microscopy, at the
+          <a href="https://www.zeiss.com/microscopy/en/products/software/zeiss-solutions-lab.html">Zeiss Solutions Lab</a>
+          in Munich.
+        </p>
+      </div>
+      <ul class="links" aria-label="Links">
+        <li><a href="mailto:setinek@ml.jku.at">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=qt1Y7n8AAAAJ&hl=de">Google Scholar</a></li>
+        <li><a href="https://github.com/psetinek">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/paul-setinek/">LinkedIn</a></li>
+        <li><a href="assets/cv.pdf">CV</a></li>
+      </ul>
+    </header>
+
+    <section class="row" aria-labelledby="research">
+      <h2 id="research">Research</h2>
+      <div class="prose">
+        <p>
+          Together with the <a href="https://www.lcm.at/">Linz Center of Mechatronics</a>, I worked
+          on distribution shifts and the robustness of neural surrogates in real-world manufacturing
+          simulations. This made me realize the importance of data in SciML on one side, and the cost
+          of generating high-fidelity data on the other. Lately, I have therefore been working on
+          training neural surrogates with multi-fidelity data, enabling compute-efficient scaling of
+          these methods.
+        </p>
+      </div>
+    </section>
+
+    <section class="row" aria-labelledby="publications">
+      <h2 id="publications">Selected publications</h2>
+      <div>
+        <ul class="papers">
+          <li>
+            <img class="paper-thumb" src="assets/web/compute_optimal_data_scaling.webp" alt="" width="900" height="576" loading="lazy">
+            <div>
+              <p class="paper-title">Compute-optimal data scaling for neural surrogates via multi-fidelity training</p>
+              <p class="authors"><span class="me">P.&nbsp;Setinek*</span>, F.&nbsp;Paischer, N.&nbsp;Thuerey, J.&nbsp;Brandstetter, F.&nbsp;Koehler*</p>
+              <p class="meta">
+                <span class="venue">NeurIPS 2026</span>
+                <a href="https://arxiv.org/abs/2610.17221">Paper</a>
+                <a href="https://github.com/psetinek/multi-fidelity-neural-surrogates">Code</a>
+                <a href="https://psetinek.github.io/multi-fidelity-neural-surrogates/">Project page</a>
+                <a href="https://huggingface.co/datasets/psetinek/multi-fidelity-airfoil">Data</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <img class="paper-thumb" src="assets/web/simshift.webp" alt="" width="900" height="379" loading="lazy">
+            <div>
+              <p class="paper-title">SIMSHIFT: A Benchmark for Adapting Neural Surrogates to Distribution Shifts</p>
+              <p class="authors"><span class="me">P.&nbsp;Setinek</span>, G.&nbsp;Galletti, T.&nbsp;Gross, D.&nbsp;Schnürer, J.&nbsp;Brandstetter, W.&nbsp;Zellinger</p>
+              <p class="meta">
+                <span class="venue">arXiv preprint, 2025</span>
+                <a href="https://arxiv.org/abs/2506.12007">Paper</a>
+                <a href="https://github.com/psetinek/simshift">Code</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <img class="paper-thumb" src="assets/web/towards_multi_fidelity_scalin_laws.webp" alt="" width="900" height="361" loading="lazy">
+            <div>
+              <p class="paper-title">Towards Multi-Fidelity Scaling Laws of Neural Surrogates in CFD</p>
+              <p class="authors"><span class="me">P.&nbsp;Setinek</span>, G.&nbsp;Galletti, J.&nbsp;Brandstetter</p>
+              <p class="meta">
+                <span class="venue">NeurIPS 2025 Workshop</span>
+                <a href="https://arxiv.org/abs/2511.01830">Paper</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <img class="paper-thumb" src="assets/web/gyroswin.webp" alt="" width="900" height="397" loading="lazy">
+            <div>
+              <p class="paper-title">GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations</p>
+              <p class="authors">F.&nbsp;Paischer, G.&nbsp;Galletti, W.&nbsp;Hornsby, <span class="me">P.&nbsp;Setinek</span>, L.&nbsp;Zanisi, N.&nbsp;Carey, S.&nbsp;Pamela, J.&nbsp;Brandstetter</p>
+              <p class="meta">
+                <span class="venue">NeurIPS 2025</span>
+                <a href="https://arxiv.org/abs/2510.07314">Paper</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="row">
+      <span aria-hidden="true"></span>
+      <p>Last updated October 2026</p>
+    </footer>
+
+  </main>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector(".theme-toggle");
+      var media = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function isDark() {
+        return root.dataset.theme ? root.dataset.theme === "dark" : media.matches;
+      }
+
+      function updateLabel() {
+        button.setAttribute("aria-label", isDark() ? "Switch to light theme" : "Switch to dark theme");
+      }
+
+      button.addEventListener("click", function () {
+        root.dataset.theme = isDark() ? "light" : "dark";
+        try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+        updateLabel();
+      });
+      media.addEventListener("change", updateLabel);
+      updateLabel();
+    })();
+  </script>
+</body>
+</html>
